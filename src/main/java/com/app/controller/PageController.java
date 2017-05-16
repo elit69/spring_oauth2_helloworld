@@ -13,4 +13,9 @@ public class PageController {
 		m.addAttribute("message", "Hello World!");
 		return "home";
 	}
+	
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	public String login() {
+		return "login";
+	}
 }
